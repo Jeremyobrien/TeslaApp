@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import CarItem from './components/CarItem';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <CarItem />
-      {/* <StatusBar style="auto" /> */}
+      <StatusBar style="auto" />
     </View>
   );
 }
