@@ -1,14 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, StatusBar } from 'react-native';
-import CarItem from './components/CarItem';
+import { StyleSheet, View, StatusBar } from 'react-native';
+import CarList from './components/CarList';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem name={ "Model X"} 
-               tagline={"Order Online For"}
-               taglineCTA={"Touchless Delivery"} 
-               image={require('./assets/images/ModelX.jpeg')}/>
+      <CarList />
       <StatusBar style="auto" />
     </View>
   );
